@@ -2,7 +2,7 @@
 
 Welcome contributor to this project!
 If you notice a bug, or have a feature request,
-please open up an issue via [dsci-310-group-18 GitHub Repository Issues](https://github.com/Dokkaebi10/dsci-310-group-18/issues).
+please open up an issue via [dsci-310-group-18 GitHub Repository Issues](https://github.com/Dokkaebi10/dsci-310-group-18-pkg/issues).
 
 If you'd like to contribute a feature or bug fix,
 you can fork our repo and submit a pull request.
