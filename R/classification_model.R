@@ -1,6 +1,3 @@
-library(caret)
-library(tidyverse)
-library(tidymodels)
 set.seed(1)
 #' K visualization 
 #' 
