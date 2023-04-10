@@ -8,7 +8,7 @@ Authors@R:
 Description: This package has functions to build many visualizations. These include a 
              majority classifier, knn visualization, boxplot and confusion matrix. Just
              input your data and it builds you the visualization you want to use.
-License: MIT and Attribution 4.0 International License
+License: MIT + file LICENSE
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.2.3
