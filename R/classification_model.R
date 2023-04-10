@@ -9,10 +9,11 @@ set.seed(1)
 #' @param gridFrom is the gridvals value
 #' @param gridTo is the gridvals value
 #'
+#' @return a line graph with the accuracy estimates versus the number of neighbors
 #' 
-#'@return a line graph with the accuracy estimates versus the number of neighbors
+#' @export
 #' 
-#'@examples 
+#' @examples 
 #' classifier(heart_training, 5, 1, 21)
 classifier <- function(data, split =5 , gridFrom = 1, gridTo = 21) {
   set.seed(1)
