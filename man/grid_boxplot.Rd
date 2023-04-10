@@ -24,5 +24,5 @@ A boxplot given the variables that always has diagosis_f as the x variable
 Make a boxplot based on the given variables for data, y-axis, y-axis label, and the title of the boxplot and with x always as degree of the heart disease
 }
 \examples{
-# grid_boxplots(heart_data, age,"ylabel", "Whatever title you'd like")
+grid_boxplots(heart_data, age,"ylabel", "Whatever title you'd like")
 }
