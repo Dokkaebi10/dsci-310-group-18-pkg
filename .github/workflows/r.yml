@@ -38,3 +38,9 @@ jobs:
       - name: Check
         run: rcmdcheck::rcmdcheck(args = "--no-manual", error_on = "error")
         shell: Rscript {0}
+      - name: Install Package
+        run: |
+          Rscript -e 'install.packages("DSCI-310/dsci-310-group-18-pkg")'
+      - name: Load Package
+        run: |
+          library(DSCI-310/dsci-310-group-18-pkg)
