@@ -11,10 +11,10 @@ set.seed(1)
 #'
 #' @return a line graph with the accuracy estimates versus the number of neighbors
 #' 
-#' @export
-#' 
 #' @examples 
 #' classifier(heart_training, 5, 1, 21)
+#' 
+#' @export
 classifier <- function(data, split =5 , gridFrom = 1, gridTo = 21) {
   set.seed(1)
   
