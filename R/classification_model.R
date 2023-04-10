@@ -4,7 +4,7 @@ library(tidymodels)
 set.seed(1)
 #' K visualization 
 #' 
-#' @param data a dataset used to be plot accuracy versus K
+#' @param heart_training is a a dataset used to be plot accuracy versus K
 #' @param split is the number of diagnosis
 #' @param gridFrom is the gridvals value
 #' @param gridTo is the gridvals value
