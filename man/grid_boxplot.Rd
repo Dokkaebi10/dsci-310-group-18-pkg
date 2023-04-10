@@ -7,7 +7,8 @@
 grid_boxplot(data, yAxis, yLabel, titleLabel)
 }
 \arguments{
-\item{data}{input dataframe for function}
+\item{data}{this is a dataframe with 14 columns and every place
+this data frame is the output of joining_data.R}
             
 \item{yAxis}{is the variable input for the y-axis}
 
@@ -15,8 +16,6 @@ grid_boxplot(data, yAxis, yLabel, titleLabel)
 
 \item{titleLabel}{is a string for the title of the graph}
 
-\item{heart_data}{this is a dataframe with 14 columns and every place
-this data frame is the output of joining_data.R}
 }
 \value{
 A boxplot given the variables that always has diagosis_f as the x variable
