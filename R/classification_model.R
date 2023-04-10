@@ -3,9 +3,11 @@ set.seed(1)
 #'
 #' @import caret
 #' @import rsample
+#' @import recipes
 #' @import dplyr
 #' @import parsnip
 #' @import workflows
+#' @import tune
 #'
 #' @param data is a a dataset used to be plot accuracy versus K
 #' @param x is diagnosis_f
@@ -24,13 +26,13 @@ set.seed(1)
 classifier <- function(data, x, y, split =5 , gridFrom = 1, gridTo = 21) {
   set.seed(1)
 
-  recipe <- dplyr::recipe(x ~ ., data) %>%
-    dplyr::step_scale(all_predictors()) %>%
-    dplyr::step_center(all_predictors())
+  recipe <- recipes::recipe(x ~ ., data) %>%
+    recipes::step_scale(all_predictors()) %>%
+    recipes::step_center(all_predictors())
 
   heart_data_recipe <- recipe
 
-  spec <- parsnip::nearest_neighbor(weight_func = "rectangular", neighbors = stats::tune()) %>%
+  spec <- parsnip::nearest_neighbor(weight_func = "rectangular", neighbors = parsnip::tune()) %>%
     parsnip::set_engine("kknn") %>%
     parsnip::set_mode("classification")
 
@@ -41,8 +43,8 @@ classifier <- function(data, x, y, split =5 , gridFrom = 1, gridTo = 21) {
   results <- workflows::workflow() %>%
     workflows::add_recipe(recipe) %>%
     workflows::add_model(spec) %>%
-    workflows::tune_grid(resamples = vfold, grid = gridvals) %>%
-    workflows::collect_metrics()
+    tune::tune_grid(resamples = vfold, grid = gridvals) %>%
+    tune::collect_metrics()
   accuracies <- results %>%
     stats::filter(y == "accuracy")
 }
