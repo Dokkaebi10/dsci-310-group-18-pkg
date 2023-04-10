@@ -12,6 +12,8 @@ library(ggplot2)
 #' 
 #' @example
 #'  knn_visualization(heart_data_accuracies)
+#' 
+#' @export
 knn_visualization <- function(data) {
 accuracy_versus_k <- ggplot(data, aes(x = neighbors, y = mean))+
     geom_point() +
