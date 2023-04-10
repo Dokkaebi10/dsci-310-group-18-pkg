@@ -22,7 +22,7 @@
 #'
 confusion_matrix <- function(data, x, y, hGraph = 7, wGraph = 7, textSize = 22) {
   confusion_matrix <- data %>%
-      parsnip::conf_mat(truth = x, estimate = y)
+      caret::conf_mat(truth = x, estimate = y)
 
 options(repr.plot.height = hGraph, repr.plot.width = wGraph)
 confusion_vis <- ggplot2::autoplot(confusion_matrix, type = "heatmap") +
@@ -33,4 +33,3 @@ confusion_vis <- ggplot2::autoplot(confusion_matrix, type = "heatmap") +
   ggplot2::scale_fill_gradient(low = '#cce3ff', high = '#177fff')
 confusion_vis
 }
-
