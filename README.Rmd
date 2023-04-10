@@ -18,14 +18,15 @@ knitr::opts_chunk$set(
 <!-- badges: start -->
 <!-- badges: end -->
 
-The goal of dsci.310.group.18.pkg is to ...
+The goal of dsci.310.group.18.pkg is to build a kNN classification model, a high accuracy classification model, standard boxplots, and confusion matrix. These functions originated in an analysis repository in order to make desired visualizations for analyzed data.
 
 ## Installation
 
 You can install the development version of dsci.310.group.18.pkg like so:
 
 ``` r
-# FILL THIS IN! HOW CAN PEOPLE INSTALL YOUR DEV PACKAGE?
+install.packages("devtools")
+devtools::install_github("DSCI-310/dsci-310-group-18-pkg")
 ```
 
 ## Example
