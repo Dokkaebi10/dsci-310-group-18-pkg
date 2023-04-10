@@ -7,6 +7,8 @@
 grid_boxplot(data, yAxis, yLabel, titleLabel)
 }
 \arguments{
+\item{data}{input dataframe for function}
+            
 \item{yAxis}{is the variable input for the y-axis}
 
 \item{yLabel}{is a string that indicates what the label for the y-axis should be}
