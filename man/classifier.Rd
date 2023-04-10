@@ -7,7 +7,7 @@
 classifier(data, split = 5, gridFrom = 1, gridTo = 21)
 }
 \arguments{
-\item{data}{heart_training is a a dataset used to be plot accuracy versus K}
+\item{data}{a dataset used to be plot accuracy versus K}
 
 \item{split}{is the number of diagnosis}
 
