@@ -1,5 +1,3 @@
-library(ggplot2)
-
 # this script builds the visualization for the 
 # classification model. An elbow plot should be produced.
 
