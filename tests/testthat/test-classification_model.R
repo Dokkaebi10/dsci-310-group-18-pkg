@@ -1,3 +1,10 @@
-test_that("multiplication works", {
-  expect_equal(2 * 2, 4)
-})
+library(testthat)
+library(tidyverse)
+
+# Test that there are 7 columns and 21 rows
+heart_training <- read.csv('../data/modelling/training_split.csv') %>%
+    mutate(diagnosis_f = as.factor(diagnosis_f))
+test_that("Classifier data has different number of columns!", {
+    expect_equal(ncol(classifier(heart_training)), 7)})
+test_that("Classifier data has a different number of rows!", {
+    expect_equal(nrow(classifier(heart_training)), 21)})
