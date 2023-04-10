@@ -23,7 +23,9 @@ library(cowplot)
 #'@returns A boxplot given the variables that always has diagosis_f as the x variable
 #'
 #'@examples
-#'# grid_boxplots(heart_data, age,"ylabel", "Whatever title you'd like")
+#' grid_boxplots(heart_data, age,"ylabel", "Whatever title you'd like")
+#'
+#' @export
 grid_boxplot <- function(data, yAxis, yLabel, titleLabel){
     boxplot_age <- ggplot(data, aes(x=diagnosis_f, y= {{yAxis}})) +  
     geom_boxplot(color="#033291", fill="#b0c8f7", alpha=0.2) +
