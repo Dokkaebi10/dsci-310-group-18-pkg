@@ -27,7 +27,6 @@ devtools::install_github("DSCI-310/dsci-310-group-18-pkg")
 - confusion_matrix()
 - majority_classifier_vis_function()
 - knn_visualization()
-- forwardSelection()
 
 ## Examples:
 ---
