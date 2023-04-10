@@ -9,10 +9,10 @@ library(tidymodels)
 #' @param textSize is size of text
 #' 
 #' @return a Confusion Matrix heat map with the accuracies based on variables of the model 
-#' @export
+#' 
 #' @examples 
 #' confusion_matrix(data_predict, 7, 7, 20, "Prediction of diagnosis", "actual Diagnosis", "Confusion Matrix Plot: \nNumber of diagnosis that are correct \nand incorrect")
-#' 
+#' @export
 confusion_matrix <- function(data, hGraph = 7, wGraph = 7, textSize = 22) {
   confusion_matrix <- data %>%
       conf_mat(truth = diagnosis_f, estimate = .pred_class)
