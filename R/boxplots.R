@@ -2,6 +2,10 @@
 # 2023-03-10 
 # DSCI310 group 18 project
 
+library(tidyverse)
+library(ggplot2)
+library(cowplot)
+
 # this script contains a function that builds 3 box plots
 # and displays them in a grid for initial visualizations
 # of the data. 
