@@ -22,5 +22,5 @@ a line graph with the accuracy estimates versus the number of neighbors
 K visualization
 }
 \examples{
-classifier(heart_training, 5, 1, 21)
+# classifier(heart_training, 5, 1, 21)
 }
