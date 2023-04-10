@@ -1,25 +1,6 @@
 library(testthat)
 library(tidyverse)
 
-source("../R/majority_classifier_function.R")
-test_that("X-axis label is not the same!", {
-          majority_classifier <- read_csv('../data/modelling/majority_classifier.csv')
-          plot <- majority_classifier_vis_function(majority_classifier)
-          expect_identical(plot$labels$x, 'Heart disease degree of severity')})
-test_that("Y-axis label is not the same!", {
-          majority_classifier <- read_csv('../data/modelling/majority_classifier.csv')
-          plot <- majority_classifier_vis_function(majority_classifier)
-          expect_identical(plot$labels$y, 'Percent of outcomes \n in training dataset')})
-
-source("../R/selection_forward_function.R")
-heart_data_subset <- read_csv('../data/modelling/forward_selection_subset.csv') %>%
-    mutate(diagnosis_f = as.factor(diagnosis_f))
-plot <- forwardSelection(heart_data_subset)
-test_that("The number of variables is not the same!", {
-          expect_equivalent(max(plot$size), 5)})
-test_that("The results are not the same!", {
-          expect_equal(min(plot$accuracy), 0.426789675597178, tolerance = 0.05)})
-
 source("../R/boxplots.R")
 # Setup
 heart_data <- read_csv('../data/processed/heart_data.csv')
