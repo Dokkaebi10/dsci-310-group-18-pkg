@@ -14,7 +14,7 @@ library(cowplot)
 #' 
 #' Make a boxplot based on the given variables for data, y-axis, y-axis label, and the title of the boxplot and with x always as degree of the heart disease
 #' 
-#' @param heart_data this is a dataframe with 14 columns and every place
+#' @param data this is a dataframe with 14 columns and every place
 #'  this data frame is the output of joining_data.R
 #' @param yAxis is the variable input for the y-axis
 #' @param yLabel is a string that indicates what the label for the y-axis should be
