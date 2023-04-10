@@ -8,23 +8,30 @@
 ## About
 ---
 
-We built a package that includes a kNN classification model, a high accuracy classification model, standard boxplots, and 
-confusion matrix. 
+This package includes a kNN classification model, a high accuracy classification model, standard boxplots, and 
+confusion matrix. These functions originated in an analysis repository in order to make desired visualizations
+for analyzed data.
 
-## Dependencies:
+## Installation:
 ---
-R version 4.2.1 & Jupyterlab 3.6.1
+Easily install this package from Github by running the following code.
+```
+install.packages("devtools")
+devtools::install_github("DSCI-310/dsci-310-group-18-pkg")
+```
 
-|Package     |Version   |
-| ---------- |:--------:|
-|cowplot     |1.1.1     |
-|tidymodels  |0.1.4     |
-|tidyverse   |1.3.1     |
-|repr        |1.1.4     |
-|ggplot2     |3.3.6     |
-|caret       |0_93      |
-|e1071       |7_11      |
-|testthat    |3.1.6     |
+## Functions:
+---
+- grid_boxplot()
+- classifer()
+- confusion_matrix()
+- majority_classifier_vis_function()
+- knn_visualization()
+- forwardSelection()
+
+## Examples:
+---
+
 
 
 ## License Information
