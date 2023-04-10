@@ -7,14 +7,14 @@
 grid_boxplot(data, yAxis, yLabel, titleLabel)
 }
 \arguments{
+\item{data}{this is a dataframe with 14 columns and every place
+this data frame is the output of joining_data.R}
+
 \item{yAxis}{is the variable input for the y-axis}
 
 \item{yLabel}{is a string that indicates what the label for the y-axis should be}
 
 \item{titleLabel}{is a string for the title of the graph}
-
-\item{heart_data}{this is a dataframe with 14 columns and every place
-this data frame is the output of joining_data.R}
 }
 \value{
 A boxplot given the variables that always has diagosis_f as the x variable
@@ -23,5 +23,6 @@ A boxplot given the variables that always has diagosis_f as the x variable
 Make a boxplot based on the given variables for data, y-axis, y-axis label, and the title of the boxplot and with x always as degree of the heart disease
 }
 \examples{
-# grid_boxplots(heart_data, age,"ylabel", "Whatever title you'd like")
+grid_boxplots(heart_data, age,"ylabel", "Whatever title you'd like")
+
 }
